@@ -1,0 +1,89 @@
+---
+title: "Module 8 R demo"
+author: "Profs Caetano & Schwartz"
+date: "March 14, 2022"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Load penguins data
+```{r, include=FALSE}
+library(tidyverse);  
+library(palmerpenguins); # https://allisonhorst.github.io/palmerpenguins/articles/intro.html
+# https://education.rstudio.com/blog/2020/07/palmerpenguins-cran/
+```
+
+
+
+```{r}
+# Let's take a first look at the data
+glimpse(penguins);
+```
+
+
+For this demo, we'll be trying to predict the length of a penguin's bill using a linear regression model.
+
+```{r, fig.width=5, fig.height=2.5}
+# First step let's look at the association between bill depth and bill length
+
+# Let's get rid of the warning
+
+# Now we can fit a linear regression model to start exploring this association more deeply
+
+```
+
+Do you think this fitted linear model is effectively representing the association between bill depth and bill length? What other variable could we add to this model? 
+```{r}
+#glimpse(penguins_clean)
+
+# New variable to add to the model: 
+
+library(broom)
+
+# What about an interaction term?
+
+
+## go to pollev.com/sta to make a prediction using this model!
+```
+
+# Comparing the prediction accuracy of multiple models
+
+```{r}
+# Set up
+
+
+# Create training dataset
+
+
+# Testing dataset includes all observations NOT in the training data
+
+
+
+# Fit models to training data
+
+
+
+# Make predictions for testing data using training model
+
+
+# Make predictions for training data using training model
+
+
+# Calculate RMSE for testing data
+
+# Calculate RMSE for training data
+
+```
+
+
+### What does it mean if the RMSE based on test data is *smaller* than the RMSE based on the training data?
+
+
+
+
+
+
